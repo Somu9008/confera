@@ -51,7 +51,7 @@ export default function PrivateChatBox({ selectedUser, roomId, onClose }) {
         receiverId: user._id, // you are the receiver
       });
     }
-  }, [selectedUser]);
+  }, [selectedUser, roomId, user]);
 
   // Listen for new private messages
   useEffect(() => {
@@ -88,7 +88,7 @@ export default function PrivateChatBox({ selectedUser, roomId, onClose }) {
       socket.off("receivePrivateMessage", handleReceivePrivateMessage);
       socket.off("messagesSeen", handleMessagesSeen);
     };
-  }, [user, selectedUser]);
+  }, [user, selectedUser, roomId]);
 
   // Send message
   const sendMessage = () => {

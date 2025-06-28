@@ -1,0 +1,24 @@
+.dashboard-container {
+  margin-top: 80px;
+  text-align: center;
+  padding: 20px;
+}
+
+.dashboard-logo {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 15px;
+}
+
+.dashboard-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.dashboard-subtext {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #555;
+  font-style: italic;
+}

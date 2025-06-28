@@ -1,0 +1,215 @@
+.login-container {
+  min-height: 98vh;
+  background: url("https://images.unsplash.com/photo-1504384308090-c894fdcc538d")
+    center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.login-card {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(15px);
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  color: #fff;
+}
+
+.login-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.login-error {
+  background-color: rgba(255, 80, 80, 0.1);
+  color: #ff4d4f;
+  padding: 10px;
+  margin-bottom: 16px;
+  border-radius: 10px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.login-input {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 16px;
+  color: #fff;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.login-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.login-input:focus {
+  border-color: #00ffe0;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.login-button {
+  padding: 12px;
+  background: linear-gradient(to right, #00ffe0, #0078ff);
+  border: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.login-button:hover {
+  transform: scale(1.03);
+}
+
+.login-register-link {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.login-register-link a {
+  color: #00ffe0;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-divider {
+  margin: 25px 0;
+  position: relative;
+  text-align: center;
+  color: #ccc;
+  font-size: 13px;
+}
+
+.login-divider::before,
+.login-divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 45%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.login-divider::before {
+  left: 0;
+}
+
+.login-divider::after {
+  right: 0;
+}
+
+.google-login-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+}
+
+.google-login-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ---------------------- */
+/* ✅ Responsive Breakpoints */
+/* ---------------------- */
+
+@media (max-width: 1000px) {
+  .login-card {
+    padding: 35px 25px;
+  }
+}
+
+@media (max-width: 900px) {
+  .login-card {
+    max-width: 380px;
+  }
+}
+
+@media (max-width: 800px) {
+  .login-card {
+    max-width: 350px;
+    padding: 30px 20px;
+  }
+
+  .login-title {
+    font-size: 26px;
+  }
+
+  .login-button {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 650px) {
+  .login-card {
+    max-width: 320px;
+  }
+
+  .login-input {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .google-login-button {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 450px) {
+  .login-card {
+    padding: 25px 18px;
+  }
+
+  .login-title {
+    font-size: 24px;
+  }
+
+  .login-input {
+    font-size: 14px;
+  }
+
+  .login-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 380px) {
+  .login-title {
+    font-size: 22px;
+  }
+
+  .login-register-link {
+    font-size: 13px;
+  }
+
+  .login-divider {
+    font-size: 12px;
+  }
+}

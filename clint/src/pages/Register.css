@@ -1,0 +1,215 @@
+.register-container {
+  min-height: 98vh;
+  background: url("https://images.unsplash.com/photo-1504384308090-c894fdcc538d")
+    center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.register-card {
+  background: rgba(0, 0, 0, 0.6); /* Glass effect */
+  backdrop-filter: blur(15px);
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  color: #fff;
+}
+
+.register-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.register-error {
+  background-color: rgba(255, 80, 80, 0.1);
+  color: #ff4d4f;
+  padding: 10px;
+  margin-bottom: 16px;
+  border-radius: 10px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.register-input {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 16px;
+  color: #fff;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.register-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.register-input:focus {
+  border-color: #00ffe0;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.register-button {
+  padding: 12px;
+  background: linear-gradient(to right, #00ffe0, #0078ff);
+  border: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.register-button:hover {
+  transform: scale(1.03);
+}
+
+.register-login-link {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.register-login-link a {
+  color: #00ffe0;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.register-divider {
+  margin: 25px 0;
+  position: relative;
+  text-align: center;
+  color: #ccc;
+  font-size: 13px;
+}
+
+.register-divider::before,
+.register-divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 45%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.register-divider::before {
+  left: 0;
+}
+
+.register-divider::after {
+  right: 0;
+}
+
+.google-register-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s;
+}
+
+.google-register-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ---------------------- */
+/* ✅ Responsive Breakpoints */
+/* ---------------------- */
+
+@media (max-width: 1000px) {
+  .register-card {
+    padding: 35px 25px;
+  }
+}
+
+@media (max-width: 900px) {
+  .register-card {
+    max-width: 380px;
+  }
+}
+
+@media (max-width: 800px) {
+  .register-card {
+    max-width: 350px;
+    padding: 30px 20px;
+  }
+
+  .register-title {
+    font-size: 26px;
+  }
+
+  .register-button {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 650px) {
+  .register-card {
+    max-width: 320px;
+  }
+
+  .register-input {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .google-register-button {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 450px) {
+  .register-card {
+    padding: 25px 18px;
+  }
+
+  .register-title {
+    font-size: 24px;
+  }
+
+  .register-input {
+    font-size: 14px;
+  }
+
+  .register-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 380px) {
+  .register-title {
+    font-size: 22px;
+  }
+
+  .register-login-link {
+    font-size: 13px;
+  }
+
+  .register-divider {
+    font-size: 12px;
+  }
+}

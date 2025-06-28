@@ -1,0 +1,163 @@
+.chat-window-container {
+  background-color: #f3f4f6;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  padding: 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Messages container */
+.messages-container {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  scrollbar-width: none;
+}
+
+/* Message Wrapper */
+.message-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/* System messages */
+.system-message {
+  text-align: center;
+  color: #6b7280;
+  font-style: italic;
+  font-size: 0.875rem;
+}
+
+/* Chat bubbles */
+.message-bubble {
+  max-width: 70%;
+  border-radius: 12px;
+  padding: 8px 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.message-incoming {
+  background-color: #fff;
+  color: #000;
+  align-self: flex-start;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.message-outgoing {
+  background-color: #3b82f6;
+  color: #fff;
+  align-self: flex-end;
+  box-shadow: 0 1px 3px rgba(59, 130, 246, 0.6);
+}
+
+.message-sender {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.message-content {
+  font-size: 1rem;
+}
+
+.message-timestamp {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin-top: 6px;
+  align-self: flex-end;
+}
+
+.typing-indicator {
+  text-align: center;
+  font-style: italic;
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin-bottom: 8px;
+}
+
+/* ------------------------------- */
+/* ✅ Responsive Breakpoints Below */
+/* ------------------------------- */
+
+@media (max-width: 1000px) {
+  .chat-window-container {
+    padding: 14px;
+  }
+
+  .message-content {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .chat-window-container {
+    padding: 12px;
+  }
+
+  .message-bubble {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 800px) {
+  .chat-window-container {
+    padding: 10px;
+  }
+
+  .message-content {
+    font-size: 0.92rem;
+  }
+
+  .message-sender {
+    font-size: 0.8rem;
+  }
+
+  .message-timestamp {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .message-bubble {
+    max-width: 90%;
+  }
+
+  .message-content {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .chat-window-container {
+    padding: 8px;
+  }
+
+  .message-bubble {
+    padding: 6px 10px;
+  }
+
+  .message-content {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .message-bubble {
+    max-width: 95%;
+    padding: 5px 8px;
+  }
+
+  .message-content {
+    font-size: 0.8rem;
+  }
+
+  .typing-indicator {
+    font-size: 0.75rem;
+  }
+}

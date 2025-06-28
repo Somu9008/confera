@@ -1,0 +1,182 @@
+.room-page {
+  max-width: 700px;
+  margin: auto;
+  padding: 40px 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.app-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 40px;
+}
+
+.room-section {
+  background-color: #f9f9f9;
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.room-section h2 {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  color: #34495e;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+}
+
+.form-row input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.form-row button {
+  background-color: #0066ff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.room-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.room-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #e0e0e0;
+}
+
+.room-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.room-actions button {
+  margin-left: 8px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #27ae60;
+  color: white;
+  cursor: pointer;
+}
+
+.room-actions .delete {
+  background-color: #e74c3c;
+}
+
+.empty-msg {
+  color: #888;
+  font-style: italic;
+}
+
+/* ---------------------- */
+/* ✅ Responsive Breakpoints */
+/* ---------------------- */
+
+@media (max-width: 1000px) {
+  .room-page {
+    padding: 30px 16px;
+  }
+}
+
+@media (max-width: 900px) {
+  .form-row input {
+    padding: 9px;
+  }
+
+  .form-row button {
+    padding: 9px 14px;
+  }
+}
+
+@media (max-width: 800px) {
+  .app-title {
+    font-size: 1.8rem;
+  }
+
+  .room-section {
+    padding: 20px;
+  }
+
+  .room-section h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-row button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .room-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .room-actions {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .room-actions button {
+    margin-left: 0;
+    margin-right: 8px;
+  }
+}
+
+@media (max-width: 450px) {
+  .room-section {
+    padding: 16px;
+  }
+
+  .room-card {
+    padding: 12px 15px;
+  }
+
+  .app-title {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .form-row input {
+    font-size: 14px;
+  }
+
+  .form-row button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .room-section h2 {
+    font-size: 1.2rem;
+  }
+}

@@ -232,19 +232,6 @@ function GroupCall({
     navigate("/rooms"); // ✅ go to another page (dashboard or room list)
   };
 
-  const goFullScreen = () => {
-    const videoElement = document.querySelector(".main-video video");
-    if (videoElement.requestFullscreen) {
-      videoElement.requestFullscreen();
-    } else if (videoElement.webkitRequestFullscreen) {
-      videoElement.webkitRequestFullscreen();
-    } else if (videoElement.mozRequestFullScreen) {
-      videoElement.mozRequestFullScreen();
-    } else if (videoElement.msRequestFullscreen) {
-      videoElement.msRequestFullscreen();
-    }
-  };
-
   return (
     <div
       className={`group-call-container `}
@@ -278,9 +265,6 @@ function GroupCall({
                   className="video-box"
                 />
               )}
-              <button onClick={goFullScreen} className="fullscreen-btn">
-                ⛶
-              </button>
             </div>
 
             <div className="side-thumbnails">

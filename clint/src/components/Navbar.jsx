@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { logout } from "../features/auth/authSlice";
@@ -9,6 +9,7 @@ const Navbar = () => {
   const { user } = useSelector((state) => state.auth);
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const handleLogout = async () => {
     try {
@@ -22,31 +23,45 @@ const Navbar = () => {
     }
   };
 
+  const toggleMenu = () => {
+    setMenuOpen((prev) => !prev);
+  };
+
   return (
     <nav className="navbar">
       <Link to="/" className="navbar-brand">
         Confera
       </Link>
 
-      <div className="navbar-links">
+      <button className="hamburger" onClick={toggleMenu}>
+        ☰
+      </button>
+
+      <div className={`navbar-links ${menuOpen ? "active" : ""}`}>
         {user ? (
           <>
-            <Link to="/dashboard" className="navbar-link">
+            <Link to="/dashboard" className="navbar-link" onClick={toggleMenu}>
               Dashboard
             </Link>
-            <Link to="/rooms" className="navbar-link">
+            <Link to="/rooms" className="navbar-link" onClick={toggleMenu}>
               Room
             </Link>
-            <button onClick={handleLogout} className="navbar-button">
+            <button
+              onClick={() => {
+                handleLogout();
+                toggleMenu();
+              }}
+              className="navbar-button"
+            >
               Logout
             </button>
           </>
         ) : (
           <>
-            <Link to="/" className="navbar-link">
+            <Link to="/" className="navbar-link" onClick={toggleMenu}>
               Login
             </Link>
-            <Link to="/register" className="navbar-link">
+            <Link to="/register" className="navbar-link" onClick={toggleMenu}>
               Register
             </Link>
           </>

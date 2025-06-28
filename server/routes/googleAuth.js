@@ -15,7 +15,8 @@ router.get(
   "/google/callback",
   passport.authenticate("google", {
     failureRedirect: "/login",
-    successRedirect: "https://confera-91ss.vercel.app/dashboard",
+    successRedirect:
+      "https://confera-kwc0fdmy2-somu9008s-projects.vercel.app/dashboard",
   })
 );
 

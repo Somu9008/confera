@@ -347,7 +347,6 @@ function GroupCall({
             >
               ❌ Leave room
             </button>
-            <button onClick={handleFullscreen}>⛶</button>
           </div>
         </>
       )}

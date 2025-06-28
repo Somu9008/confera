@@ -48,9 +48,11 @@ app.use(
     secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: false,
-    cookie: { secure: false, httpOnly: true, sameSite: "lax" },
+    cookie: { secure: true, httpOnly: true, sameSite: "none" },
   })
 );
+
+app.set("trust proxy", 1);
 
 app.use(passport.initialize());
 app.use(passport.session());

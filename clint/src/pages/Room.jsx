@@ -3,7 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import ChatWindow from "./ChatWindow.jsx";
 import socket from "./socket";
-import PrivateChatBox from "../components/PrivateChatBox";
+import PrivateChatBox from "../components/PrivateChatbox.jsx";
 import { useSelector } from "react-redux";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";

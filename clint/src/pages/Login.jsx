@@ -22,7 +22,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        "https://confera.onrender.com/api/auth/login",
         form,
         {
           withCredentials: true,
@@ -38,7 +38,7 @@ const Login = () => {
   };
 
   const handleGoogleLogin = () => {
-    window.open("http://localhost:5000/auth/google", "_self");
+    window.open("https://confera.onrender.com/auth/google", "_self");
   };
 
   return (

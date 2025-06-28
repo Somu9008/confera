@@ -26,7 +26,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "https://confera.onrender.com/api/auth/register",
         form,
         { withCredentials: true }
       );
@@ -44,7 +44,7 @@ const Register = () => {
   };
 
   const handleGoogleLogin = () => {
-    window.open("http://localhost:5000/auth/google", "_self");
+    window.open("https://confera.onrender.com/auth/google", "_self");
   };
 
   return (

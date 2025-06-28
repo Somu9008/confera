@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import socket from "../pages/socket";
 import axios from "axios";
 import { useSelector } from "react-redux";
-import "./PrivateChatBox.css";
+import "./PrivateChatbox.css";
 
 export default function PrivateChatBox({ selectedUser, roomId, onClose }) {
   const [allPrivateMessages, setAllPrivateMessages] = useState([]);

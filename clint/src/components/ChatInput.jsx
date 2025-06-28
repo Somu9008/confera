@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import socket from "../pages/socket";
 import axios from "axios";
 import { useSelector } from "react-redux";
-import "./ChatInput.css";
+import "./Chatinput.css";
 
 function ChatInput({ roomId }) {
   const [message, setMessage] = useState("");

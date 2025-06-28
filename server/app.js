@@ -24,14 +24,14 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "https://confera-kwc0fdmy2-somu9008s-projects.vercel.app",
+    origin: "https://confera-91ss.vercel.app",
     credentials: true,
   },
 });
 
 app.use(
   cors({
-    origin: "https://confera-kwc0fdmy2-somu9008s-projects.vercel.app",
+    origin: "https://confera-91ss.vercel.app",
     credentials: true,
   })
 );

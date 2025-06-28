@@ -265,6 +265,7 @@ function GroupCall({
                     }
                   }}
                   autoPlay
+                  controls={false}
                   playsInline
                   className="video-box"
                 />
@@ -274,6 +275,7 @@ function GroupCall({
                     if (el) el.srcObject = peers[mainStreamId];
                   }}
                   autoPlay
+                  controls={false}
                   playsInline
                   className="video-box"
                 />
@@ -344,7 +346,7 @@ function GroupCall({
             >
               ❌ Leave room
             </button>
-            <button onClick={handleFullscreen}>📺 Fullscreen</button>
+            <button onClick={handleFullscreen}>⛶</button>
           </div>
         </>
       )}

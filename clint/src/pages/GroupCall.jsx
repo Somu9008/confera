@@ -248,7 +248,7 @@ function GroupCall({
                   ref={(el) => {
                     if (el) {
                       el.srcObject = stream;
-                      el.muted = true;
+                      el.muted = false;
                     }
                   }}
                   autoPlay

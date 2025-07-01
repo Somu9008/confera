@@ -35,7 +35,7 @@ It supports **Google login** and **custom authentication** using `express-sessio
 
 
 # Clone the project
-git clone https://github.com/your-username/canfera.git
+git clone https://github.com/Somu9008/confera
 cd confera
 
 cd server
